@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Primeira aplicacao</string>
+    <string name="app_name">IMC</string>
+    <string name="peso_kg">Peso (kg)</string>
+    <string name="altura_m">Altura (m)</string>
+    <string name="genero">Gênero</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="calcular">Calcular</string>
 </resources>
