@@ -3,6 +3,7 @@ package org.senac.primeiraaplicacao
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import org.senac.primeiraaplicacao.org.senac.imc.GeneroEnum
 import org.senac.primeiraaplicacao.org.senac.imc.Imc
 
@@ -39,11 +40,20 @@ class MainActivity : AppCompatActivity() {
                 val imcFormatado =
                     String.format("%.2f", imc.calcularImc())
 
+                AlertDialog.Builder(this)
+                    .setTitle("IMC")
+                    .setMessage("Seu IMC é ${imcFormatado} kg/m \n" +
+                            "Classificação: ${getString(imc.classificacao())} \n" +
+                            "Peso ideal: ${String.format("%.2f",imc.pesoIdeal())}")
+                    .setPositiveButton("Ok") { dialog, which ->
+                        dialog.dismiss()
+                    }.show()
+/*
                 Toast.makeText(
                     this,
                     "Seu IMC é ${imcFormatado} kg/m",
-                    Toast.LENGTH_SHORT
-                ).show()
+                    Toast.LENGTH_LONG
+                ).show()*/
             }
         }
     }

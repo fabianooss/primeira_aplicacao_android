@@ -6,4 +6,14 @@
     <string name="masculino">Masculino</string>
     <string name="feminino">Feminino</string>
     <string name="calcular">Calcular</string>
+    <string name="baixoPesoMuitoGrave">Baixo peso muito grave</string>
+    <string name="baixoPesoGrave">Baixo peso grave</string>
+    <string name="baixoPeso">Baixo peso</string>
+    <string name="pesoNormal">Peso normal</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="obesidadegrauI">Obesidade grau I</string>
+    <string name="obesidadegrauII">Obesidade grau II</string>
+    <string name="obesidadegrauIII">Obesidade grau III</string>
+
+
 </resources>
